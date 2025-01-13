@@ -26,13 +26,7 @@ https://download.splunk.com/products/splunk/releases/9.4.0/osx/splunk-9.4.0-6b4e
 https://download.splunk.com/products/splunk/releases/9.4.0/osx/splunk-9.4.0-6b4ebe426ca6-darwin-intel.dmg
 ```
 
-Using this script in conjunction with wget to download the latest deb package:
-```
-$ wget `bash splunk-downloader.sh full | grep "linux-amd64.deb"`
-```
-
-List all Universal Forwarder links:
-
+List all Splunk Universal Forwarder links:
 ```
 $ bash splunk-downloader.sh uf
 https://download.splunk.com/products/universalforwarder/releases/9.4.0/windows/splunkforwarder-9.4.0-251651b291fe-windows-x86.msi
@@ -61,3 +55,9 @@ https://download.splunk.com/products/universalforwarder/releases/9.4.0/solaris/s
 https://download.splunk.com/products/universalforwarder/releases/9.4.0/solaris/splunkforwarder-9.4.0-251651b291fe-solaris-amd64.tar.Z
 https://download.splunk.com/products/universalforwarder/releases/9.4.0/aix/splunkforwarder-9.4.0-251651b291fe-aix-powerpc.tgz
 ```
+
+I use this script in conjunction with wget to download the latest deb package:
+```
+$ wget `bash splunk-downloader.sh full | grep "linux-amd64.deb"`
+```
+
