@@ -2,11 +2,7 @@
 
 This Bash script list all download links for the latest version of Splunk Enterprise and the Universal Forwarder.
 
-The way this script works is that it looks for all lines containing "data-link" in either https://www.splunk.com/en_us/download/splunk-enterprise.html (for Splunk Enterprise) or https://www.splunk.com/en_us/download/universal-forwarder.html (for Universal Forwarder). You can test it yourself:
-
-```
-curl https://www.splunk.com/en_us/download/splunk-enterprise.html | grep "data-link"
-```
+The way this script works is that it looks for all lines containing "data-link" in the HTLM source code of either https://www.splunk.com/en_us/download/splunk-enterprise.html (for Splunk Enterprise) or https://www.splunk.com/en_us/download/universal-forwarder.html (for Universal Forwarder).
 
 ## Usage
 
